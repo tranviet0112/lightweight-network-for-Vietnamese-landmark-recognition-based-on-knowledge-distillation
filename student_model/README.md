@@ -60,6 +60,6 @@ model_FNN =  'path weight from FNN'
 studend_model, num_classes_extract_step, num_channels = "5CNN", '30 for mode C and 365 for mode B', 16
 
 ```
-python! run_predict.py
+!python run_predict.py
 
 ```
