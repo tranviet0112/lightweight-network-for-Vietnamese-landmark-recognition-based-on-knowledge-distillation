@@ -31,7 +31,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--mode', default='C',
                     help="Defines the distill mode: B or C, default is C.\\
                     B: use the universial dataset of place365 with 365 labels for the dataset input.\\
-                    C: use the local dataset with the number of optional labels, \\
+                    C: use the local dataset with the number of optional labels \\
                     if you choose mode C, please pass the parameter --num_classes")
 parser.add_argument('--num_classes', default='30',
                     help="The number of labels for the local dataset in case of mode C")

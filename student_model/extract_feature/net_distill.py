@@ -34,7 +34,7 @@ class Net_3CNN(nn.Module):
         self.num_classes = num_classes
         # thiết kế mạng ở đây
 
-        self.conv1 = nn.Conv2d(3, self.num_channels*2, 4, stride=2, padding=3)
+        self.conv1 = nn.Conv2d(3, self.num_channels*2, 4, stride=1, padding=4)
         self.bn1 = nn.BatchNorm2d(self.num_channels*2)
         # sau khi qua pool2d(2) = 114
 
