@@ -19,7 +19,7 @@
   https://bom.to/na8RH7V
   ```
   
-## Step 1 : training teacher/student
+## Step 1 : train teacher/student
 
 run train.py in knowledge_knowledge folder
 ```
@@ -32,7 +32,7 @@ If training teacher/student on Vietnamese landmark dataset:
 !python train.py --mode C --num_classes 30 --model_teacher resnet18 --model_student 5CNN --model_dir experiments\cnn_distill (directory contain params.json file) --data_dir directory of data use to train
 ```
 
-## Step 2: extracting features
+## Step 2: extract features
 
 change working directory to extract_feature folder
 ```
@@ -42,7 +42,7 @@ change working directory to extract_feature folder
                                  
 ```
 
-## Step 3: training FNN (Feedforward Neural Network)
+## Step 3: train FNN (Feedforward Neural Network)
 
 change working directory to FNN folder
 ```
@@ -50,7 +50,7 @@ change working directory to FNN folder
 
 ```
 
-## Step 4: Predict on test set
+## Step 4: predict on test set
 
 change working directory to predict folder
 Modify this parameter in run_predict.py follow your setting before run
